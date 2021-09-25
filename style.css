@@ -50,6 +50,17 @@ h1, h2{
   margin-top: 1em;
 }
 
+.search {
+	background: no-repeat;
+	border-width: 0px 0px 1px 0px;
+	color: white;
+	font-size: 18px;
+}
+
+.search:focus:focus-visible{
+  outline: none;
+}
+
 .links-wrapper{
   display: flex;
 }
@@ -63,10 +74,29 @@ a{
   color: white;
 }
 
+li a{
+  font-size: 18px;
+  font-weight: 700;
+}
+
 /*li header*/
 li:first-child {
   list-style: none;
   font-weight: bolder;
   line-height: 2em;
-  font-size: larger;
+  font-size: 24px;
+}
+
+li:hover a{
+  color: rgb(167, 86, 77);
+  transition: 0.5s;
+}
+
+/* Custom bullets */
+ul.degen{
+  list-style: none;
+}
+
+ul.degen img{
+  height: 18px;
 }
